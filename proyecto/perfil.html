@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitácora</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oldenburg&family=Roboto+Condensed:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/general.css">
+
+</head>
+
+<body id="cuerpo">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+                <a class="navbar-brand" href="index.html"><i class="fas fa-space-shuttle"></i></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li> <a href="registro.html">Agregar cuerpo celeste</a></li>
+                    <li> <a href="registro_programa_espacial.html">Agregar programa espacial</a></li>
+                    <li> <a href="registro_misiones.html">Agregar misiones</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+
+        <div class="container" id="listar-programas">
+            <h1 class="h1 center">Perfil</h1>
+            <div class="col-md-12">
+                <img class="col-md-12" src="img/astronave.png" alt="Card image cap">
+            </div>
+            <h1 id="titulo" class="col-md-12 center"></h1>
+            <div class="col-md-12 col-xs-12 arrow">
+                <a class="col-md-4 col-xs-6" href="bitacora.html">
+                    <img src="img/recargar.svg" alt="">
+                </a>
+            </div>
+
+            <div id="contenedor" class="col-md-12  col-xs-12">
+            </div>
+        </div>
+        <div class="container" id="listar-misiones">
+            <h1 id="titulo" class="h2 center col-md-12">Misiones asignadas</h1>
+            <div id="contenedor2" class="col-md-12">
+            </div>
+        </div>
+    </main>
+    <footer class="col-md-12 col-xs-12 footer">
+        <div class="copyright col-md-10 col-xs-9">
+            <p>&copy 2020 - Jose Daniel Rodríguez Zamora</p>
+        </div>
+        <div class="social col-md-2 col-xs-3">
+            <span class="support">Contactos</span>
+            <a href="mailto:jrodriguezz1@ucenfotec.ac.cr"> <i class="far fa-envelope"></i></a>
+            <a href="https://www.facebook.com/danielrz13/" class="face"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/dinael_13/" class="insta"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/d83fa2ee9e.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="js/json_quemado.js"></script>
+    <script src="js/general.js"></script>
+    <script src="js/perfil.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+.error {
+    border: solid red 1px;
+}
+
+body {
+    font-family: 'Oldenburg', cursive;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.603);
+    border: 0;
+    font-size: 1.1em;
+    width: 100%;
+    z-index: 1;
+    li a {
+        color: rgb(0, 174, 255)!important;
+        &:hover {
+            color: rgb(255, 255, 255)!important;
+            text-decoration: none;
+        }
+    }
+    i {
+        color: rgb(0, 174, 255)!important;
+    }
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.603);
+    border: 0;
+    font-size: 1.1em;
+    bottom: 0;
+    position: fixed;
+    border-radius: 7px;
+    padding-top: 10px;
+    color: rgb(0, 174, 255);
+    a {
+        color: rgb(0, 174, 255);
+        &:hover {
+            color: rgb(255, 255, 255)!important;
+            text-decoration: none;
+        }
+    }
+}
+
+main {
+    margin-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        position: fixed;
+    }
+    .h1 {
+        padding-top: 40px;
+    }
+}
+
+#index {
+    background-image: url(../img/espacemorado.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100vh!important;
+    color: white;
+    #main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .h1 {
+            text-align: center;
+            color: white;
+        }
+        h5 {
+            font-weight: bold;
+        }
+    }
+    a {
+        &:hover {
+            color: rgb(0, 174, 255);
+            text-decoration: none;
+        }
+    }
+    .panel {
+        margin-top: 20px;
+        h5 {
+            text-align: center;
+        }
+    }
+    .card-img-top {
+        width: 90%;
+        margin: 0 auto;
+        margin-left: 10px;
+    }
+}
+
+.table {
+    font-size: 1.2em;
+}
+
+#buscar {
+    padding: 10px;
+}
+
+.arrow {
+    cursor: pointer;
+}

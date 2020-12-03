@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Oldenburg&family=Roboto+Condensed:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/general.css">
+    <title>Registro</title>
+</head>
+
+<body id="body_registro">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+                <a class="navbar-brand" href="index.html"><i class="fas fa-space-shuttle"></i></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li> <a href="registro.html">Agregar cuerpo celeste</a></li>
+                    <li> <a href="registro_programa_espacial.html">Agregar programa espacial</a></li>
+                    <li> <a href="registro_misiones.html">Agregar misiones</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main id="registro" class="container">
+        <div class="h1">Registro de un cuerpo celeste</div>
+        <form id="form" class="form-group">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="txt_select">Seleccionar tipo de cuerpo celeste: </label>
+                    <select class="form-control" id="txt_select">
+                        <option value=""></option>
+                        <option value="estrella">Estrella</option>
+                        <option value="planeta">Planeta</option>
+                        <option value="satelite">Satételite</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="txt_nombre">Nombre:</label>
+                    <input type="text" class="form-control" id="txt_nombre">
+                </div>
+                <div class="form-group">
+                    <label for="txt_masa">Masa:</label>
+                    <input type="text" id="txt_masa" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="txt_temp_media">Temperatura media:</label>
+                    <input type="text" id="txt_temp_media" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="txt_duracion_dia">Duración de un día:</label>
+                    <input type="text" id="txt_duracion_dia" class="form-control">
+                </div>
+            </div>
+            <!-- estrellas -->
+            <div id="estrella" class="hidden col-md-6">
+                <div class="form-group">
+                    <label for="txt_edad">Edad:</label>
+                    <input class="form-control" type="text" id="txt_edad">
+                </div>
+                <div class="form-group">
+                    <label for="txt_composicion">Composición: </label>
+                    <input class="form-control" type="text" id="txt_composicion">
+                </div>
+                <div class="form-group">
+                    <label for="txt_intensidad">Intensidad lumínica:</label>
+                    <input class="form-control" type="text" id="txt_intensidad">
+                </div>
+                <div class="form-group">
+                    <label for="txt_tamano">Tamaño:</label>
+                    <input class="form-control" type="text" id="txt_tamano">
+                </div>
+            </div>
+            <!-- planetas -->
+            <div id="planeta" class="hidden col-md-6">
+                <div class="form-group">
+                    <label for="txt_distancia">Distancia media del sol:</label>
+                    <input class="form-control" type="text" id="txt_distancia">
+                </div>
+                <div class="form-group">
+                    <label for="txt_duracion_ano">Duración de un año: </label>
+                    <input class="form-control" type="text" id="txt_duracion_ano">
+                </div>
+                <div class="form-group">
+                    <label for="txt_cantidad_satelites">Cantidad de satélites:</label>
+                    <input class="form-control" type="number" id="txt_cantidad">
+                </div>
+                <div class="form-group">
+                    <label for="txt_satelites_orbita">Satélites en su órbita:</label>
+                    <input class="form-control" type="number" id="txt_satelites_orbita">
+                </div>
+            </div>
+            <!-- satelites -->
+            <div id="satelite" class="hidden col-md-6">
+                <div class="form-group">
+                    <label for="distancia_entre">Distancia media existente entre el satélite y el cuerpo sobre el cual orbita: </label>
+                    <input class="form-control" type="text" id="txt_distancia_entre">
+                </div>
+                <div class="form-group">
+                    <label for="txt_carac">Características principales: </label>
+                    <input class="form-control" type="text" id="txt_caracteristicas">
+                </div>
+                <div class="form-group">
+                    <label for="txt_planeta_pertenece">Planeta al que pertenece: </label>
+                    <input class="form-control" type="text" id="txt_planeta_pertenece">
+                </div>
+            </div>
+            <div class="col-md-12">
+                <button type="submit" class="btn btn-success" id="btn_guardar">Submit</button>
+            </div>
+        </form>
+    </main>
+    <footer class="col-md-12 col-xs-12 footer">
+        <div class="copyright col-md-10 col-xs-9">
+            <p>&copy 2020 - Jose Daniel Rodríguez Zamora</p>
+        </div>
+        <div class="social col-md-2 col-xs-3">
+            <span class="support">Contactos</span>
+            <a href="mailto:jrodriguezz1@ucenfotec.ac.cr"> <i class="far fa-envelope"></i></a>
+            <a href="https://www.facebook.com/danielrz13/" class="face"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/dinael_13/" class="insta"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/d83fa2ee9e.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="js/json_quemado.js"></script>
+    <script src="js/general.js"></script>
+    <script src="js/clases.js"></script>
+    <script src="js/validar.js"></script>
+    <script src="js/registro.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

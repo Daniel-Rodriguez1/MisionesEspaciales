@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oldenburg&family=Roboto+Condensed:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/general.css">
+</head>
+
+<body id="cuerpo">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+                <a class="navbar-brand" href="index.html"><i class="fas fa-space-shuttle"></i></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li> <a href="registro.html">Agregar cuerpo celeste</a></li>
+                    <li> <a href="registro_programa_espacial.html">Agregar programa espacial</a></li>
+                    <li> <a href="registro_misiones.html">Agregar misiones</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container" id="tbl-satelites">
+            <h1 class="center h1">Satélites</h1>
+            <a href="listar_estrellas.html">
+                <div id="btn-programa" class="center panel col-md-4 col-md-offset-1 col-xs-4 col-xs-offset-1">
+                    <h5 class="text-info">Estrellas</h5>
+                </div>
+            </a>
+            <a href="listar_planetas.html">
+                <div id="btn-misiones" class="center panel col-md-4 col-md-offset-2 col-xs-4 col-xs-offset-2">
+                    <h5 class="text-info">Planetas</h5>
+                </div>
+            </a>
+            <img src="img/satelite.png " alt="Card image cap" class="card-img-top">
+            <div class="input col-md-12 input-group">
+                <input type="text" class=" " id="buscar" placeholder="Buscar">
+            </div>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Masa</th>
+                            <th>Temperatura media</th>
+                            <th>Distancia entre el satélite y el planeta</th>
+                            <th>Características </th>
+                            <th>Planeta al que pertenece</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </main>
+    <footer class="col-md-12 col-xs-12 footer">
+        <div class="copyright col-md-10 col-xs-9">
+            <p>&copy 2020 - Jose Daniel Rodríguez Zamora</p>
+        </div>
+        <div class="social col-md-2 col-xs-3">
+            <span class="support">Contactos</span>
+            <a href="mailto:jrodriguezz1@ucenfotec.ac.cr"> <i class="far fa-envelope"></i></a>
+            <a href="https://www.facebook.com/danielrz13/" class="face"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/dinael_13/" class="insta"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/d83fa2ee9e.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="js/json_quemado.js"></script>
+    <script src="js/general.js"></script>
+    <script src="js/listar_satelites.js"></script>
+</body>
+
+</html>

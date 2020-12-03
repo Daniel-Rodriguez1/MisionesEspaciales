@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Oldenburg&family=Roboto+Condensed:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.8.1/css/bootstrap-select.css">
+    <link rel="stylesheet" href="css/general.css">
+    <title>Registro Mision</title>
+</head>
+
+
+<body id="registro_misiones">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+                <a class="navbar-brand" href="index.html"><i class="fas fa-space-shuttle"></i></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li> <a href="registro.html">Agregar cuerpo celeste</a></li>
+                    <li> <a href="registro_programa_espacial.html">Agregar programa espacial</a></li>
+                    <li> <a href="registro_misiones.html">Agregar misiones</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="h1">Registro de misiones</div>
+        <form action="" class="form-group" id="mision_form">
+            <div class="form-group">
+                <label for="txt_nombre_mision">Nombre de la mision:</label>
+                <input type="text" class="form-control" name="txt_nombre_mision" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group row">
+                <label for="txt_tripulantes" class="col-md-12">Tripulantes:</label>
+                <select class="selectpicker col-md-12 col-xs-12" name="txt_tripulantes" id="select" multiple data-live-search="true">
+                    <option>Franklin Chang-Díaz</option>
+                    <option>Neil Armstrong</option>
+                    <option>Yuri Gagarin</option>
+                    <option>Valentina Tereshkova</option>
+                    <option>Rodolfo Neri Vela</option>
+                    <option>Buzz Aldrin</option>
+                    <option>Sally Ride</option>
+                    <option>John Glenn</option>
+                    <option>Laika</option>
+                    <option>Ham</option>   
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="txt_fecha_lanzamiento">Fecha de lanzamiento:</label>
+                <input type="date" class="form-control" name="txt_fecha_lanzamiento" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+                <label for="txt_duracion">Duración en tiempo:</label>
+                <input type="text" class="form-control" name="txt_duracion" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+                <label for="txt_datos_interes">Datos de interés:</label>
+                <input type="text" class="form-control" name="txt_datos_interes" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+                <label for="txt_resultado">Resultado:</label>
+                <input type="text" class="form-control" name="txt_resultado" aria-describedby="emailHelp">
+            </div>
+
+            <div class="form-group">
+                <label for="txt_nave">Nave:</label>
+                <input type="text" class="form-control" name="txt_nave" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+                <label for="txt_destino">Cuerpo celeste destino:</label>
+                <select class="form-control" id="txt_destino" name="txt_destino">
+                    <option value=""></option>
+                    <option value="Orbital">Orbital</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="txt_programa">Programa espacial a cual pertenece:</label>
+                <select class="form-control" id="txt_programa_pertenece" name="txt_programa">
+                    <option value=""></option>
+                </select>
+            </div>
+            <div class="col-md-12 row">
+                <button type="submit" class="btn btn-success" id="btn_guardar">Submit</button>
+            </div>
+        </form>
+    </main>
+    <footer class="col-md-12 col-xs-12 footer">
+        <div class="copyright col-md-10 col-xs-9">
+            <p>&copy 2020 - Jose Daniel Rodríguez Zamora</p>
+        </div>
+        <div class="social col-md-2 col-xs-3">
+            <span class="support">Contactos</span>
+            <a href="mailto:jrodriguezz1@ucenfotec.ac.cr"> <i class="far fa-envelope"></i></a>
+            <a href="https://www.facebook.com/danielrz13/" class="face"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/dinael_13/" class="insta"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.8.1/js/bootstrap-select.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/d83fa2ee9e.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="js/json_quemado.js"></script>
+    <script src="js/general.js"></script>
+    <script src="js/clases.js"></script>
+    <script src="js/registro_misiones.js"></script>
+
+
+</body>
+
+</html>

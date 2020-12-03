@@ -1,0 +1,113 @@
+//ccs para el registro
+#body_registro {
+    background-image: url(../img/system.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100vh!important;
+    color: white;
+    .h1 {
+        text-align: center;
+    }
+    #registro {
+        .hidden {
+            display: none;
+        }
+    }
+}
+
+//css para registro programa espacial
+#registro_programa {
+    background-image: url(../img/rocket.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100vh!important;
+    color: white;
+    .h1 {
+        text-align: center;
+    }
+}
+
+//css para registro misiones
+#registro_misiones {
+    background-image: url(../img/planetita.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100vh!important;
+    color: white;
+    .h1 {
+        text-align: center;
+    }
+}
+
+.center {
+    text-align: center;
+}
+
+//css para los listar
+#cuerpo {
+    background-image: url(../img/espacemorado.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100vh!important;
+    color: white;
+    img {
+        width: 20%;
+        margin-bottom: 20px;
+    }
+    .input {
+        color: black;
+        display: flex;
+        justify-content: flex-end;
+        input {
+            margin-bottom: 10px;
+            border: 0;
+            border-radius: 4px;
+            height: 30px;
+            outline: 0;
+        }
+    }
+    h5 {
+        font-weight: bold;
+        &:hover {
+            color: rgb(0, 174, 255);
+            text-decoration: none;
+        }
+    }
+    button {
+        padding: 10px;
+        font-weight: bold;
+        &:hover {
+            color: rgb(0, 174, 255);
+            text-decoration: none;
+        }
+    }
+}
+
+#listar-programas {
+    #contenedor div {
+        border: solid 2px white;
+        margin: 10px 0;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    div a {
+        text-decoration: none;
+    }
+}
+
+#listar-misiones {
+    #contenedor2 div {
+        border: solid 2px white;
+        margin: 10px 0;
+        padding: 10px;
+        border-radius: 10px;
+    }
+}
